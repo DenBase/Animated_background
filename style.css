@@ -1,0 +1,144 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+main {
+    position: relative;
+    min-height: 650px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.red {
+    -webkit-animation: red 15s linear infinite;
+    animation: red 15s linear infinite;
+    background-image: radial-gradient(ellipse closest-side at center,#48ff00,#fbff00 70%,rgba(229,67,86,0) 100%);
+    width: 100%;
+    height: 0;
+    padding-top: 60%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    bottom: 9%;
+    left: -15;
+   
+}
+
+.blue {
+    -webkit-animation: rgb(0, 255, 106) 15s linear infinite;
+    animation: blue 1s linear infinite;
+    background-image: radial-gradient(ellipse closest-side at center,#25d3ff,#9b2fff 70%,rgba(229,67,86,0) 100%);
+    width: 100%;
+    height: 0;
+    padding-top: 60%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    bottom: 9%;
+    left: 20%;
+}
+
+.green {
+    background-image: radial-gradient(ellipse closest-side at center,#3439ef,#3439ef 70%,rgba(52,57,239,0) 100%);
+    animation: green 3s linear infinite;
+    animation-direction: reverse;
+    width: 90%;
+    height: 0;
+    padding-top: 100%;
+    position: absolute;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    bottom: 0%;
+    left: -10%;
+}
+
+.pink {
+    background-image: radial-gradient(ellipse closest-side at center,#ff00aa,rgba(229,67,86,0) 100%);
+    -webkit-animation: pink 8s linear infinite;
+    animation: pink 2s linear infinite;
+    width: 90%;
+    height: 0;
+    padding-top: 100%;
+    position: absolute;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    bottom: 0%;
+    left: -20%;
+}
+
+.white {
+    background-image: radial-gradient(ellipse closest-side at center,#47ff9d,rgba(53, 223, 10, 0) 100%);
+    -webkit-animation: rgb(251, 110, 110) 5s linear infinite;
+    animation: rgb(251, 142, 142) 10s linear infinite;
+    width: 90%;
+    height: 0;
+    padding-top: 100%;
+    position: absolute;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    bottom: 0%;
+    right: -30%;
+}
+
+.red .blue .green .pink .white {
+    position: absolute;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    bottom: 40%;
+}
+
+.red .blue .green {
+    left: 0;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+}
+
+.pink .white {
+    width: 55%;
+    height: 0;
+    top: 10%;
+    padding-top: 50%;
+    margin: auto;
+}
+
+article {
+    width: 750px;
+    margin-left: -375px;
+    bottom: 174px;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.capsule {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.capsule img {
+    height: 127px;
+    -webkit-animation: levitation 5s ease-in-out infinite;
+    animation: levitation 5s ease-in-out infinite;
+}
+
